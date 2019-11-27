@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mysql1'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,13 +39,58 @@ return [
             'prefix' => '',
         ],
 
-        'mysql' => [
+        'mysql1' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE1'),
+            'username' => env('DB_USERNAME1'),
+            'password' => env('DB_PASSWORD1'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
+        'mysql2' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST2'),
+            'port'      => env('DB_PORT2'),
+            'database'  => env('DB_DATABASE2'),
+            'username'  => env('DB_USERNAME2'),
+            'password'  => env('DB_PASSWORD2'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
+        'mysql3' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST3'),
+            'port'      => env('DB_PORT3'),
+            'database'  => env('DB_DATABASE3'),
+            'username'  => env('DB_USERNAME3'),
+            'password'  => env('DB_PASSWORD3'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
+        'mysql4' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST4'),
+            'port'      => env('DB_PORT4'),
+            'database'  => env('DB_DATABASE4'),
+            'username'  => env('DB_USERNAME4'),
+            'password'  => env('DB_PASSWORD4'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

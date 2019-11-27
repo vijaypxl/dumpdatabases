@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/export', function () {
+    set_time_limit(0);
+    for($i=1; $i<5; $i++) {
+        Artisan::call('db:export', [
+            'username' => config('database.connections.mysql'.$i.'.username'),
+            'password' => config('database.connections.mysql'.$i.'.password'),
+            'db' => config('database.connections.mysql'.$i.'.database'),
+        ]);
+        echo '<pre>';
+        print_r(Artisan::output());
+    }
+});
